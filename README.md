@@ -28,14 +28,14 @@ public class MyApplication {
 **使用（任意方法）：**
 
 ```java
-	/**
-	* 方法XXX
-	*/
-	@ConcurrencyLimit(useGlobalConfig = true)
-	public void testMethod() {
+/**
+* 方法XXX
+*/
+@ConcurrencyLimit(useGlobalConfig = true)
+public void testMethod() {
 
-		// TODO
-	}
+	// TODO
+}
 ```
 
 
@@ -43,27 +43,27 @@ public class MyApplication {
 **注解参数说明：**
 
 ```java
-	/**
-	 * 是否使用全局配置项，默认不使用<br>
-	 * 
-	 * 
-	 * @return
-	 */
-	boolean useGlobalConfig() default false;
+/**
+ * 是否使用全局配置项，默认不使用<br>
+ * 
+ * 
+ * @return
+ */
+boolean useGlobalConfig() default false;
 
-	/**
-	 * 最高并发数量，默认1000
-	 * 
-	 * @return
-	 */
-	long max() default 1000;
+/**
+ * 最高并发数量，默认1000
+ * 
+ * @return
+ */
+long max() default 1000;
 
-	/**
-	 * 等待时长，超过此时长后抛出异常，单位：秒，默认10秒
-	 * 
-	 * @return
-	 */
-	long timeout() default 10;
+/**
+ * 等待时长，超过此时长后抛出异常，单位：秒，默认10秒
+ * 
+ * @return
+ */
+long timeout() default 10;
 ```
 
 
